@@ -1,3 +1,3 @@
-# Max Lutz Starter Theme
+# BigUp Branding Starter Theme
 
-This is a starter theme developed by Max Lutz.
+This starter theme is design and developed by BigUp Branding
