@@ -1,0 +1,4 @@
+body#tinymce.wp-editor img { 
+	max-width:100%;
+	height:auto;
+}
