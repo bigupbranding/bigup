@@ -1,7 +1,7 @@
 <?php
 /**
  * header.php
- * @package maxlutz
+ * @package bigup
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -16,7 +16,7 @@
 
 <body <?php body_class(); ?>>
 
-<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'maxlutz' ); ?></a>
+<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'bigup' ); ?></a>
 
 <div id="website">
 	

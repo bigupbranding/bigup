@@ -90,7 +90,7 @@ $args = array(
 	'query_var'         => true,
 	'rewrite'           => array( 'slug' => 'type' ),
 );
-register_taxonomy( 'type', array( 'post' ), $args );
+//register_taxonomy( 'type', array( 'post' ), $args );
 
 
 
@@ -135,6 +135,32 @@ add_filter( 'image_send_to_editor', 'wp_image_wrap_init', 10, 8 );
  */
 add_editor_style( get_template_directory_uri() . '/inc/css/admin.css' ); 
 
+
+/**
+ * Paging Nav
+ */
+function bigup_paging_nav() {
+	// Don't print empty markup if there's only one page.
+	if ( $GLOBALS['wp_query']->max_num_pages < 2 ) {
+		return;
+	}
+	?>
+	<nav class="navigation paging-navigation" role="navigation">
+		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'bigup' ); ?></h1>
+		<div class="nav-links">
+
+			<?php if ( get_next_posts_link() ) : ?>
+			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'bigup' ) ); ?></div>
+			<?php endif; ?>
+
+			<?php if ( get_previous_posts_link() ) : ?>
+			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'bigup' ) ); ?></div>
+			<?php endif; ?>
+
+		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	<?php
+}
 
 
 
