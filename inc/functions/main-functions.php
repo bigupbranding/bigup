@@ -156,5 +156,10 @@ function bigup_paging_nav() {
 }
 
 
+/**
+ * Remove editor
+ */
+define( 'DISALLOW_FILE_EDIT', true );
+
 
 ?>

@@ -42,8 +42,8 @@
 						<?php endif ?>
 						<?php if ( $social_li ): ?>
 							<li><a href="<?php echo $social_li ?>" class="bigup-linkedin" target="_blank"></a></li>
-					<?php endif ?></ul
-					>
+						<?php endif ?>
+					</ul>
 				</div>
 
 				<div class="footer-col-2">
@@ -76,13 +76,33 @@
 
 <?php wp_footer(); ?>
 
-<!-- <div class="mobile-menu">
-	<?php wp_nav_menu(); ?>
-</div> -->
+
 <div class="fade-cover"></div>
 <div class="loading-message">
 	<img src="<?php bloginfo('template_url'); ?>/img/oval.svg" />
 </div>
-
+<div id="mobile-menu-container">
+	<div class="mobile-title"><?php bloginfo('title') ?></div>
+	<?php wp_nav_menu(); ?>
+	<div class="contact-info">
+		<ul class="mobile-social-media">
+			<?php if ( $social_fb ): ?>
+				<li><a href="<?php echo $social_fb ?>" class="bigup-facebook" target="_blank"></a></li>
+			<?php endif ?>
+			<?php if ( $social_tw ): ?>
+				<li><a href="<?php echo $social_tw ?>" class="bigup-twitter" target="_blank"></a></li>
+			<?php endif ?>
+			<?php if ( $social_gp ): ?>
+				<li><a href="<?php echo $social_gp ?>" class="bigup-google-plus" target="_blank"></a></li>
+			<?php endif ?>
+			<?php if ( $social_pn ): ?>
+				<li><a href="<?php echo $social_pn ?>" class="bigup-pinterest" target="_blank"></a></li>
+			<?php endif ?>
+			<?php if ( $social_li ): ?>
+				<li><a href="<?php echo $social_li ?>" class="bigup-linkedin" target="_blank"></a></li>
+			<?php endif ?>
+		</ul>
+	</div>
+</div>
 </body>
 </html>

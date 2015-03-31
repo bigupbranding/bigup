@@ -32,6 +32,8 @@
 				<?php wp_nav_menu(); ?>
 			</nav>
 
+			<button id="mobile-toggle"><i class="bigup-menu"></i>Menu</button>
+
 		</div>
 
 	</header><!-- #header-->

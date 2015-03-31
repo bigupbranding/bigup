@@ -81,6 +81,11 @@ jQuery(function($){
 	}
 	smoothScroll();
 
+	// mobile menu toggle
+	$('button#mobile-toggle').click(function(){
+		$('body').toggleClass('mobile-open');
+	});
+
 	// Plugins : headroom.js
 	$('#header').headroom({ tolerance : { up : 10, down : 0 } });
 
