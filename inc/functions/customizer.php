@@ -91,6 +91,112 @@ function bigup_customize_register( $wp_customize ) {
 			'description' => ''
 		))); 
 
+	// Section
+	$wp_customize->add_section( 'social-media' , array(
+		'title' => __( 'Social Media', 'bigup' ),
+		'priority' => 30,
+		'description' => __( '', 'bigup' )
+	));
+ 
+		// Add Setting
+		$wp_customize->add_setting( 'social-facebook' , array( 'default' => '' ));
+		$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'social-facebook', array(
+			'label' => __( 'Enter Facebook URL', 'bigup' ),
+			'section' => 'social-media',
+			'settings' => 'social-facebook',
+			'description' => 'Must start with "http://"'
+		))); 
+
+		// Add Setting
+		$wp_customize->add_setting( 'social-twitter' , array( 'default' => '' ));
+		$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'social-twitter', array(
+			'label' => __( 'Enter Twitter URL', 'bigup' ),
+			'section' => 'social-media',
+			'settings' => 'social-twitter',
+			'description' => 'Must start with "http://"'
+		))); 
+
+		// Add Setting
+		$wp_customize->add_setting( 'social-google-plus' , array( 'default' => '' ));
+		$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'social-google-plus', array(
+			'label' => __( 'Enter Google Plus URL', 'bigup' ),
+			'section' => 'social-media',
+			'settings' => 'social-google-plus',
+			'description' => 'Must start with "http://"'
+		))); 
+
+
+		// Add Setting
+		$wp_customize->add_setting( 'social-pinterest' , array( 'default' => '' ));
+		$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'social-pinterest', array(
+			'label' => __( 'Enter Pinterest URL', 'bigup' ),
+			'section' => 'social-media',
+			'settings' => 'social-pinterest',
+			'description' => 'Must start with "http://"'
+		))); 
+
+
+		// Add Setting
+		$wp_customize->add_setting( 'social-linkedin' , array( 'default' => '' ));
+		$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'social-linkedin', array(
+			'label' => __( 'Enter LinkedIn URL', 'bigup' ),
+			'section' => 'social-media',
+			'settings' => 'social-linkedin',
+			'description' => 'Must start with "http://"'
+		))); 
+
+	// Section
+	$wp_customize->add_section( 'company-info' , array(
+		'title' => __( 'Company Info', 'bigup' ),
+		'priority' => 30,
+		'description' => __( '', 'bigup' )
+	));
+
+		// Add Setting
+		$wp_customize->add_setting( 'company-name' , array( 'default' => '' ));
+		$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'company-name', array(
+			'label' => __( 'Company Name', 'bigup' ),
+			'section' => 'company-info',
+			'settings' => 'company-name',
+			'description' => ''
+		))); 
+
+		// Add Setting
+		$wp_customize->add_setting( 'company-address' , array( 'default' => '' ));
+		$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'company-address', array(
+			'label' => __( 'Address', 'bigup' ),
+			'section' => 'company-info',
+			'settings' => 'company-address',
+			'description' => ''
+		))); 
+
+		// Add Setting
+		$wp_customize->add_setting( 'company-location' , array( 'default' => '' ));
+		$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'company-location', array(
+			'label' => __( 'Location (City, State, Zip)', 'bigup' ),
+			'section' => 'company-info',
+			'settings' => 'company-location',
+			'description' => ''
+		))); 
+
+		// Add Setting
+		$wp_customize->add_setting( 'company-phone' , array( 'default' => '' ));
+		$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'company-phone', array(
+			'label' => __( 'Phone Number', 'bigup' ),
+			'section' => 'company-info',
+			'settings' => 'company-phone',
+			'description' => ''
+		))); 
+
+		// Add Setting
+		$wp_customize->add_setting( 'company-email' , array( 'default' => '' ));
+		$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'company-email', array(
+			'label' => __( 'Email Address', 'bigup' ),
+			'section' => 'company-info',
+			'settings' => 'company-email',
+			'description' => ''
+		))); 
+
 }
 add_action( 'customize_register', 'bigup_customize_register' );
 
