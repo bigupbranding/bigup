@@ -1,6 +1,6 @@
 <?php
 /**
- * @package maxlutz
+ * @package bigup
  */
 ?>
 	
@@ -37,7 +37,7 @@
 
 		<div id="credits">
 			<div class="container">
-				&copy; <?php echo date('Y'); ?> <?php bloginfo('title') ?> by <a href="http://maxlutzfl.github.io/" rel="designer">Max Lutz</a>
+				&copy; <?php echo date('Y'); ?> <?php bloginfo('title') ?> by <a href="http://bigupbranding.com" rel="designer">BigUp Branding</a>
 			</div>
 		</div>
 

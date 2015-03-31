@@ -1,6 +1,6 @@
 <?php
 /**
- * @package mlwc
+ * @package bigup
  */
 ?>
 
@@ -14,7 +14,7 @@
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'bcore' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'bigup' ),
 				'after'  => '</div>',
 			) );
 		?>

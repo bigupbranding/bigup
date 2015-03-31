@@ -1,6 +1,6 @@
 <?php
 /**
- * @package maxlutz
+ * @package bigup
  */
 
 	$site_color = get_theme_mod('website-color');
@@ -34,19 +34,19 @@ get_header(); ?>
 					<li style="border-bottom:3px solid <?php echo $site_color ?>">
 						<a href="<?php echo get_permalink( $action_1 ); ?>">
 							<div class="featured-page-image" style="background-image:url(<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $action_1 ), 'large' )[0]; ?>)"></div>
-							<div class="featured-page-title"><?php echo get_the_title( $action_1 ); ?></div>
+							<div class="featured-page-title bigup-arrow-circle-right-line"><?php echo get_the_title( $action_1 ); ?></div>
 						</a>
 					</li>
 					<li style="border-bottom:3px solid <?php echo $site_color ?>">
 						<a href="<?php echo get_permalink( $action_2 ); ?>">
 							<div class="featured-page-image" style="background-image:url(<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $action_2 ), 'large' )[0]; ?>)"></div>
-							<div class="featured-page-title"><?php echo get_the_title( $action_2 ); ?></div>
+							<div class="featured-page-title bigup-arrow-circle-right-line"><?php echo get_the_title( $action_2 ); ?></div>
 						</a>
 					</li>
 					<li style="border-bottom:3px solid <?php echo $site_color ?>">
 						<a href="<?php echo get_permalink( $action_3 ); ?>">
 							<div class="featured-page-image" style="background-image:url(<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $action_3 ), 'large' )[0]; ?>)"></div>
-							<div class="featured-page-title"><?php echo get_the_title( $action_3 ); ?></div>
+							<div class="featured-page-title bigup-arrow-circle-right-line"><?php echo get_the_title( $action_3 ); ?></div>
 						</a>
 					</li>
 				</ul>

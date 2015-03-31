@@ -1,24 +1,17 @@
 <?php 
 /**
  * main-functions.php
- * @package maxlutz
+ * @package bigup
  */
 
 
 
-// add theme support HTML5
+// add theme support 
 add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
-
-// add theme support thumbnails
 add_theme_support( 'post-thumbnails' );
-
-// add theme support feed links
 add_theme_support( 'automatic-feed-links' );
-
-// add theme support menu
 add_theme_support( 'menus' );
-
-
+add_theme_support( 'title-tag' );
 
 /**
  * Register widget area.
@@ -97,7 +90,7 @@ $args = array(
 /**
  * Display navigation to next/previous post when applicable.
  */
-function maxlutz_post_nav() {
+function bigup_post_nav() {
 	// Don't print empty markup if there's nowhere to navigate.
 	$previous = ( is_attachment() ) ? get_post( get_post()->post_parent ) : get_adjacent_post( false, '', true );
 	$next     = get_adjacent_post( false, '', false );
@@ -107,11 +100,11 @@ function maxlutz_post_nav() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'maxlutz' ); ?></h1>
+		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'bigup' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', 'maxlutz' ) );
-				next_post_link(     '<div class="nav-next">%link</div>',     _x( '%title&nbsp;<span class="meta-nav">&rarr;</span>', 'Next post link',     'maxlutz' ) );
+				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', 'bigup' ) );
+				next_post_link(     '<div class="nav-next">%link</div>',     _x( '%title&nbsp;<span class="meta-nav">&rarr;</span>', 'Next post link',     'bigup' ) );
 			?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->

@@ -1,6 +1,6 @@
 <?php
 /**
- * @package maxlutz
+ * @package bigup
  */
 ?>
 
@@ -38,7 +38,7 @@
 
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'maxlutz' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'bigup' ),
 				'after'  => '</div>',
 			) );
 		?>

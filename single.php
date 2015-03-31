@@ -1,6 +1,6 @@
 <?php
 /**
- * @package maxlutz
+ * @package bigup
  */
 
 get_header(); ?>

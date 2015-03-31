@@ -1,7 +1,7 @@
 <?php 
 /**
  * Custom Post Types
- * @package maxlutz
+ * @package bigup
  */
 
 
@@ -11,20 +11,20 @@
 add_action( 'init', 'post_type_example' );
 function post_type_example() {
 	$labels = array(
-		'name'               => _x( 'Examples', 'post type general name', 'maxlutz' ),
-		'singular_name'      => _x( 'Example', 'post type singular name', 'maxlutz' ),
-		'menu_name'          => _x( 'Examples', 'admin menu', 'maxlutz' ),
-		'name_admin_bar'     => _x( 'Example', 'add new on admin bar', 'maxlutz' ),
-		'add_new'            => _x( 'Add New', 'book', 'maxlutz' ),
-		'add_new_item'       => __( 'Add New Example', 'maxlutz' ),
-		'new_item'           => __( 'New Example', 'maxlutz' ),
-		'edit_item'          => __( 'Edit Example', 'maxlutz' ),
-		'view_item'          => __( 'View Example', 'maxlutz' ),
-		'all_items'          => __( 'All Examples', 'maxlutz' ),
-		'search_items'       => __( 'Search Examples', 'maxlutz' ),
-		'parent_item_colon'  => __( 'Parent Examples:', 'maxlutz' ),
-		'not_found'          => __( 'No examples found.', 'maxlutz' ),
-		'not_found_in_trash' => __( 'No examples found in Trash.', 'maxlutz' )
+		'name'               => _x( 'Examples', 'post type general name', 'bigup' ),
+		'singular_name'      => _x( 'Example', 'post type singular name', 'bigup' ),
+		'menu_name'          => _x( 'Examples', 'admin menu', 'bigup' ),
+		'name_admin_bar'     => _x( 'Example', 'add new on admin bar', 'bigup' ),
+		'add_new'            => _x( 'Add New', 'book', 'bigup' ),
+		'add_new_item'       => __( 'Add New Example', 'bigup' ),
+		'new_item'           => __( 'New Example', 'bigup' ),
+		'edit_item'          => __( 'Edit Example', 'bigup' ),
+		'view_item'          => __( 'View Example', 'bigup' ),
+		'all_items'          => __( 'All Examples', 'bigup' ),
+		'search_items'       => __( 'Search Examples', 'bigup' ),
+		'parent_item_colon'  => __( 'Parent Examples:', 'bigup' ),
+		'not_found'          => __( 'No examples found.', 'bigup' ),
+		'not_found_in_trash' => __( 'No examples found in Trash.', 'bigup' )
 	);
 
 	$args = array(

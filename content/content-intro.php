@@ -1,7 +1,7 @@
 <?php 
 /**
  * Intro
- * @package maxlutz
+ * @package bigup
  */
 
 	$intro_title = get_theme_mod('intro-title');
